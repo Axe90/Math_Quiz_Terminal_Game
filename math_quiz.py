@@ -43,5 +43,5 @@ def easy_quiz():
 print(easy_quiz())
 #print(dif(name))
     
-##TESTING
+
 
