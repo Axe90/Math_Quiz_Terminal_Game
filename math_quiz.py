@@ -32,10 +32,10 @@ def sub_easy():
     return score  
 
 def mult():
-    return num1, num2
+    pass
 
 def div():
-    return num1 / num2
+    pass
 
 def dif(difficulty):
     if difficulty == 'e':
