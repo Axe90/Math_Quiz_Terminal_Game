@@ -18,8 +18,18 @@ def sum_easy():
         print("Incorrect! the answer is: " + str(answer))
     return score
 
-def sub(num1, num2):
-    return num1 - num2
+def sub_easy():
+    a = random.randint(5, 10)
+    b = random.randint(0, 5)
+    answer = a - b
+    response = input("{a} - {b} = ".format(a = a, b = b))
+    if response == str(answer):
+        score = 1
+        print("Correct!")
+    else:
+        score = 0
+        print("Incorrect! the answer is: " + str(answer))
+    return score  
 
 def mult(num1, num2):
     return num1, num2
@@ -42,6 +52,7 @@ def easy_quiz():
         print("Welcome {0} to the EASY quiz!".format(name))
         score += sum_easy()
         score += sum_easy()
+        score += sub_easy()
         print("You finished the quiz with a score of " + str(score))  
 
 
