@@ -11,11 +11,12 @@ def sum_easy():
     answer = a + b
     response = input("{a} + {b} = ".format(a = a, b = b))
     if response == str(answer):
-        #correct = True
+        score = 1
         print("Correct!")
     else:
+        score = 0
         print("Incorrect! the answer is: " + str(answer))
-    return 
+    return score
 
 def sub(num1, num2):
     return num1 - num2
@@ -39,9 +40,9 @@ def easy_quiz():
     difficulty = dif(dif_in)
     if difficulty == 'easy':
         print("Welcome {0} to the EASY quiz!".format(name))
-        sum_easy()
-        sum_easy()
-        #print(score)  
+        score += sum_easy()
+        score += sum_easy()
+        print("You finished the quiz with a score of " + str(score))  
 
 
 print(easy_quiz())
