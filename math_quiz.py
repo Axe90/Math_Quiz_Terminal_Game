@@ -56,7 +56,8 @@ def easy_quiz():
         print("Welcome {0} to the EASY quiz!".format(name))
         score += sum_easy()
         score += sub_easy()
-        print("You finished the quiz with a score of " + str(score))  
+        print("You finished the quiz with a score of " + str(score)) 
+        return "Thank you for playing" 
 
 
 print(easy_quiz())
