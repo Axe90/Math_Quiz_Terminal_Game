@@ -31,10 +31,10 @@ def sub_easy():
         print("Incorrect! the answer is: " + str(answer))
     return score  
 
-def mult(num1, num2):
+def mult():
     return num1, num2
 
-def div(num1, num2):
+def div():
     return num1 / num2
 
 def dif(difficulty):
@@ -44,20 +44,23 @@ def dif(difficulty):
     elif difficulty == 'h':
         dif_set = 'hard'
         return dif_set
+    elif difficulty != 'e':
+        return dif(input("TRY AGAIN Type 'e' for easy: ")) 
+        
+        
 
 def easy_quiz():
     score = 0
-    difficulty = dif(dif_in)
+    difficulty = dif(dif_in)    
     if difficulty == 'easy':
         print("Welcome {0} to the EASY quiz!".format(name))
-        score += sum_easy()
         score += sum_easy()
         score += sub_easy()
         print("You finished the quiz with a score of " + str(score))  
 
 
 print(easy_quiz())
-#print(dif(name))
+
  
 
 
