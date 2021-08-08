@@ -8,8 +8,8 @@ dif_in = input("Type 'e' for EASY or 'm' for MEDIUM or 'h' for HARD: ")
 
 
 def sum_easy():
-    a = random.randint(0, 10)
-    b = random.randint(0, 5)
+    a = random.randint(0, 20)
+    b = random.randint(0, 10)
     answer = a + b
     response = input("{a} + {b} = ".format(a = a, b = b))
     if response == str(answer):
@@ -21,7 +21,7 @@ def sum_easy():
     return score
 
 def sub_easy():
-    a = random.randint(5, 10)
+    a = random.randint(5, 20)
     b = random.randint(0, 5)
     answer = a - b
     response = input("{a} - {b} = ".format(a = a, b = b))
@@ -34,8 +34,8 @@ def sub_easy():
     return score  
 
 def sum_medium():
-    a = random.randint(0, 10)
-    b = random.randint(5, 10)
+    a = random.randint(0, 20)
+    b = random.randint(10, 20)
     answer = a + b
     response = input("{a} + {b} = ".format(a = a, b = b))
     if response == str(answer):
@@ -47,8 +47,8 @@ def sum_medium():
     return score   
 
 def sub_medium():
-    a = random.randint(5, 10)
-    b = random.randint(0, 5)
+    a = random.randint(10, 20)
+    b = random.randint(0, 10)
     answer = a - b
     response = input("{a} - {b} = ".format(a = a, b = b))
     if response == str(answer):
